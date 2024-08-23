@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #8052ec, #d161ff);
+}
+
+.container {
+  min-width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 20px;
+}
+
+#newTask {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+#newTask input {
+  width: 70%;
+  height: 45px;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+  padding: 12px;
+  color: #111111;
+  font-weight: 500;
+  position: relative;
+  border-radius: 5px;
+}
+
+#newTask input:focus {
+  outline: none;
+  border-color: #8052ec;
+}
+#newTask button {
+  position: relative;
+  float: right;
+  width: 20%;
+  height: 45px;
+  background-color: #8052ec;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+#tasks {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.task {
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border-bottom: 2px solid #d161ff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+.task span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.task button {
+  background-color: #8052ec;
+  height: 100%;
+  width: 40px;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.Completed {
+  text-decoration: line-through;
+}
